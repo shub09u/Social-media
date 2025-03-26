@@ -64,7 +64,7 @@ description:descriptionRef?.current?.value,
         }
 console.log(obj);
  try {
-        let res = await axios.post('http://localhost:8090/posts/create',obj,{
+        let res = await axios.post('https://social-media-1-7t2p.onrender.com/posts/create',obj,{
             headers:{
                 'Authorization':userSlice.token
             }

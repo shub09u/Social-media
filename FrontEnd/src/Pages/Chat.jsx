@@ -18,7 +18,7 @@ const Chat = () => {
 console.log(allMessages);
 
   const getChat = async () => {
-    let res = await axios.get(`http://localhost:8090/chat/getFriendChat/${friendId}`, {
+    let res = await axios.get(`https://social-media-1-7t2p.onrender.com/chat/getFriendChat/${friendId}`, {
       headers: {
         'Authorization': userSlice.token
       }
@@ -44,7 +44,7 @@ console.log(allMessages);
       }
  socket.emit('sendMessage',{...obj,userId:userSlice.user._id, friendId})
 
-      let res = await axios.post(`http://localhost:8090/chat/create/${friendId}`,obj,{
+      let res = await axios.post(`https://social-media-1-7t2p.onrender.com/chat/create/${friendId}`,obj,{
         headers:{
           'Authorization':userSlice.token
         }
@@ -70,7 +70,7 @@ const scrollToBottom = () => {
 
   return (
     <div>
-      <div className="flex h-[calc(100vh-65px)] overflow-hidden">
+      <div className="flex h-[calc(100vh-65px)] overflow-hidden mt-16">
         {/* Sidebar */}
         <div className="w-1/4 bg-white border-r border-gray-300">
           {/* Sidebar Header */}

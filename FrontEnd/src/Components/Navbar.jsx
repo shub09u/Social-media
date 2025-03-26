@@ -78,7 +78,7 @@ export default function PrimarySearchAppBar() {
 
 
   const handleSearch = async (e) => {
-    let res = await axios.get(`http://localhost:8090/user/search?name=${e.target.value}`)
+    let res = await axios.get(`https://social-media-1-7t2p.onrender.com/user/search?name=${e.target.value}`)
     let data = res.data
     console.log(data);
     setSearchUser(data.user)

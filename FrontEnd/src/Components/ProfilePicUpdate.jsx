@@ -23,7 +23,7 @@ let res= await axios.post('https://api.cloudinary.com/v1_1/datqx3bjs/upload',for
  console.log(res);
 console.log(res.data.secure_url);
 
-let response=await axios.put('http://localhost:8090/user/update',{profilePic:res.data.secure_url},{
+let response=await axios.put('https://social-media-1-7t2p.onrender.com/user/update',{profilePic:res.data.secure_url},{
 headers:{
 'Authorization':Userslice.token
 }

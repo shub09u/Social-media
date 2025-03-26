@@ -16,7 +16,7 @@ user:  userDetail? userDetail.user:  ""
   export const fetchUserByToken = createAsyncThunk(
     'fetchUserByToken',
     async (token) => {
-      const response = await axios.get('http://localhost:8090/user/loginuser',{
+      const response = await axios.get('https://social-media-1-7t2p.onrender.com/user/loginuser',{
         headers:{
             'Authorization':token
         }

@@ -24,7 +24,7 @@ password:passwordRef.current.value
 
 }
 try {
-  let res = await axios.post('http://localhost:8090/user/login', obj);
+  let res = await axios.post('https://social-media-1-7t2p.onrender.com/user/login', obj);
 console.log(res.data)
 if(res.status==201 || res.status==200){
    toast.success(res.data.msg,{position:'top-center'});

@@ -16,7 +16,7 @@ console.log(userslice);
   const [posts, setposts] = useState([]);
   let getAllPosts = async()=>{
     console.log("hello")
-    let res = await axios.get('http://localhost:8090/posts/yourpost',{
+    let res = await axios.get('https://social-media-1-7t2p.onrender.com/posts/yourpost',{
       headers:{
         'Authorization':userslice.token
       }
@@ -40,8 +40,8 @@ console.log(userslice);
       <div  className="topPart w-[90%] m-auto h-[45vh] relative bg-green-500 ">
         <CoverPic/>
       </div>
-      <div className="mid mb-5 w-[50%] m-auto text-center mt-5 ">
-        <div className='flex justify-center gap-7 '>
+      <div className="mid mb-5 w-[50%] m-auto text-center mt-16 ">
+        <div className='flex justify-center gap-7  '>
         <span>
             <b>Posts</b>
             <p>{posts.length}</p>

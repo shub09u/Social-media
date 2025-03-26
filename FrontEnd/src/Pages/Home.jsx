@@ -13,7 +13,7 @@ console.log(userSlice);
 
   // console.log(userSlice)
   let getAllPosts = async()=>{
-    let res = await axios.get('http://localhost:8090/posts/alluserpost',{
+    let res = await axios.get('https://social-media-1-7t2p.onrender.com/posts/alluserpost',{
       headers:{
         'Authorization':userSlice.token
       }
@@ -36,7 +36,7 @@ console.log(userSlice);
     </div>
   
     {/* Main Content - Pushed right, scrollable */}
-    <div className='ml-[240px] flex-1 mt-16 overflow-y-auto  bg-amber-300' style={{ height: 'calc(110vh - 65px)' }}>
+    <div className='ml-[240px] flex-1 mt-16 overflow-y-auto  bg-amber-300' style={{ height: 'calc(100vh - 65px)' }}>
         <div className='max-w-1/2 m-auto  flex flex-col gap-2'>
           {posts?.map((ele,i)=>{
  return <Posts getAllPosts= {getAllPosts} key ={ele._id} ele={ele}/>

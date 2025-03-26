@@ -29,7 +29,7 @@ let res= await axios.post('https://api.cloudinary.com/v1_1/datqx3bjs/upload',for
  console.log(res);
 console.log(res.data.secure_url);
 
-let response=await axios.put('http://localhost:8090/user/update',{coverPic:res.data.secure_url},{
+let response=await axios.put('https://social-media-1-7t2p.onrender.com/user/update',{coverPic:res.data.secure_url},{
 headers:{
 'Authorization':Userslice.token
 }
@@ -53,7 +53,7 @@ setTiming(false)
 </div>
 }
 <div className='updateCoverPic absolute bottom-0 right-5'>
-        <label htmlFor="cover">< FaCamera size={35} color='white'/></label>
+        <label htmlFor="cover">< FaCamera size={35} color='Red'/></label>
         <input onChange={handleCoverChanger} type="file" hidden id='cover' />
     </div>
 

@@ -15,7 +15,7 @@ if(!obj.email){
 return toast.warning('email field cannot be blank ',{position:'top-center'})
 
 }
-let res = await axios.post('http://localhost:8090/user/forget',obj)
+let res = await axios.post('https://social-media-1-7t2p.onrender.com/user/forget',obj)
 
         let data = res.data
         toast.success(data.msg,{position:"top-center"})

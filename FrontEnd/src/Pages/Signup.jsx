@@ -23,7 +23,7 @@ password:passwordRef.current.value
 
 }
 try {
-  let res = await axios.post('http://localhost:8090/user/register', obj);
+  let res = await axios.post('https://social-media-1-7t2p.onrender.com/user/register', obj);
 console.log(res);
 
 if(res.status==201 || res.status==200){

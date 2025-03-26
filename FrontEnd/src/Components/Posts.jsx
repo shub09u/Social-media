@@ -58,7 +58,7 @@ let navigate = useNavigate()
     const handleLike = async(obj)=>{
         console.log(obj)
 
-        let res = await axios.get(`http://localhost:8090/posts/likePost/${obj._id}`,{
+        let res = await axios.get(`https://social-media-1-7t2p.onrender.com/posts/likePost/${obj._id}`,{
             headers:{
                 'Authorization':userSlice.token
             }
@@ -83,7 +83,7 @@ let navigate = useNavigate()
 const commentLike=async(obj)=>{
 console.log(obj);
 
-let res = await axios.get(`http://localhost:8090/posts/likecomment/${obj._id}`)
+let res = await axios.get(`https://social-media-1-7t2p.onrender.com/posts/likecomment/${obj._id}`)
         let data = res.data
         console.log(data)
 
@@ -95,7 +95,7 @@ let res = await axios.get(`http://localhost:8090/posts/likecomment/${obj._id}`)
         let text = commentRef.current.value;
         console.log(text)
         console.log(post)
-        let res = await axios.post(`http://localhost:8090/posts/comment/${post._id}`,{text},{
+        let res = await axios.post(`https://social-media-1-7t2p.onrender.com/posts/comment/${post._id}`,{text},{
             headers:{
                 'Authorization':userSlice.token
             }
@@ -109,7 +109,7 @@ let res = await axios.get(`http://localhost:8090/posts/likecomment/${obj._id}`)
       const handleCommentDelete = async(obj)=>{
         console.log(obj)
         console.log(props.ele)
-        let res = await axios.delete(`http://localhost:8090/posts/commentDelete/${props.ele._id}/${obj._id}`)
+        let res = await axios.delete(`https://social-media-1-7t2p.onrender.com/posts/commentDelete/${props.ele._id}/${obj._id}`)
         let data = res.data;
         console.log(data)
         props.getAllPosts()

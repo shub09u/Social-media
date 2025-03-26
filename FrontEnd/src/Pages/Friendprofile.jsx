@@ -21,7 +21,7 @@ console.log(userSlice);
 console.log(friend);
 
   let getFriendData = async()=>{
-    let res = await axios.get(`http://localhost:8090/user/getFriend/${friendId}`,{
+    let res = await axios.get(`https://social-media-1-7t2p.onrender.com/user/getFriend/${friendId}`,{
       headers:{
         'Authorization':userSlice.token
       }
@@ -37,7 +37,7 @@ console.log(friend);
 
   const [friendPosts, setfriendPosts] = useState([]);
   const getFriendPost = async()=>{
-   let res = await axios.get(`http://localhost:8090/posts/friendPost/${friendId}`,{
+   let res = await axios.get(`https://social-media-1-7t2p.onrender.com/posts/friendPost/${friendId}`,{
     headers:{
       'Authorization':userSlice.token
     }
@@ -53,7 +53,7 @@ console.log(friend);
   },[friendId])
 
   const handleFollow = async()=>{
-    let res = await axios.put(`http://localhost:8090/user/follower/${friendId}`,{},{
+    let res = await axios.put(`https://social-media-1-7t2p.onrender.com/user/follower/${friendId}`,{},{
 
       headers:{
         'Authorization': userSlice.token
