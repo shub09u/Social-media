@@ -7,6 +7,7 @@ const cors=require('cors')
 
 const connecttodb=require('./config/db')
 connecttodb()
+require('dotenv').config()
 
 const userouter=require('./Route/Userrouter')
 const Postrouter=require('./Route/Postrouter')
@@ -14,10 +15,9 @@ const chatRoutes=require('./Route/chatRoutes')
 
 
 app.use(cors({
-    origin: 'http://localhost:3000',  
-    credentials: true                 
+    origin: 'https://localhost:3000',  // Frontend URL
+    credentials: true                 // Allow credentials (cookies, headers)
 }));
-               
 
 
 const io = require('socket.io')(server);

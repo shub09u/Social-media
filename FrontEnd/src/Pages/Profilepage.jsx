@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Posts from '../Components/Posts';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
-import CoverPic from '../components/CoverPic';
+import CoverPic from '../Components/CoverPic';
 
 
 const Profilepage = () => {
