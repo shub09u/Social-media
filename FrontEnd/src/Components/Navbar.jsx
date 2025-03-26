@@ -217,7 +217,7 @@ export default function PrimarySearchAppBar() {
             {
               searchUser.map((ele, i) => {
                   
-                return ele._id === userslice.user?._id ? <Link state={ele._id} onClick={() => setSearchUser([])} to={'/profile'} className='flex item-center gap-4 px-2 border-b border-[#e1dbdb'>
+                return ele._id === userslice.user?._id ? <Link state={ele._id} onClick={() => setSearchUser([])} to={'/profile'} className='flex item-center gap-5 px-2 border-b border-[#e1dbdb'>
                   <img className='w-12 h-12 rounded-full border-amber-500 border' src={ele.profilePic} alt="" />
                   <h3>{ele.name}</h3>
                 </Link>

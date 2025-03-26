@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 
 
 import Posts from '../Components/Posts';
-import CoverPic from '../components/CoverPic';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { Link, useLocation } from 'react-router-dom';

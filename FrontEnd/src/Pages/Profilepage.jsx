@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-
 import Posts from '../Components/Posts';
-import CoverPic from '../components/CoverPic';
 import { useSelector } from 'react-redux';
 import axios from 'axios';
 

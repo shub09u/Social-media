@@ -14,7 +14,7 @@ const chatRoutes=require('./Route/chatRoutes')
 
 
 app.use(cors({
-    origin: 'https://localhost:3000',  
+    origin: 'http://localhost:3000',  
     credentials: true                 
 }));
                
