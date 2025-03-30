@@ -110,7 +110,7 @@ const commentlike = async (req, res) => {
       res.status(200).json({ msg: 'comment liked successfully' });
     }
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(501).json({ error: error.message });
   }
 };
 const friendPost = async(req,res)=>{

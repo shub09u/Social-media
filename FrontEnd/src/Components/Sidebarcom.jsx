@@ -89,22 +89,22 @@ props.getAllPosts()
 
 
   return (
-    <div>
-      <ul className='flex flex-col text-center w-[230px] bg-violet-200'>
-<li className='p-3 border-b text-black'> <Link to={'/'}>Home</Link> </li>
+    <div className=''>
+      <ul className=' lg:w-[230px] w-[80px] flex flex-col text-center  bg-violet-200 '>
+<li className='lg:p-3   border-b text-black'> <Link to={'/'}>Home</Link> </li>
 
-<li onClick={showModal} className='p-3 border-b text-black'>create post</li>
-<li  className='p-3 border-b text-black'>Message</li>
-<li  className='p-3 border-b text-black'>Followers</li>
-<li  className='p-3 border-b text-black'>Following</li>
+<li onClick={showModal} className=' lg:p-3  md:1 sm:p-0  border-b text-black'>create post</li>
+<li  className='lg:p-3  border-b text-black'>Message</li>
+<li  className='lg:p-3  border-b text-black'>Followers</li>
+<li  className='lg:p-3  border-b text-black'>Following</li>
 </ul>
 
-<Modal title= "Create Post" className='text-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+<Modal title= "Create Post" className='lg:w-full md:w-[150px] sm:w-[80px] text-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         {/* <p>Some contents...</p>
         <p>Some contents...</p>
         <p>Some contents...</p> */}
 
-<form action="" className='w-full h-full flex flex-col gap-3'>
+<form action="" className='  flex flex-col gap-3'>
 <label htmlFor="">title</label>
 <input ref={titleRef} className='px-4 py-2 rounded-md border' type="text" placeholder='enter title' />
 {/* 

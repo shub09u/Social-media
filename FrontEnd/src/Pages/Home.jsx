@@ -29,14 +29,14 @@ console.log(userSlice);
   },[])
 
   return (
-    <div className='flex h-[80vh]'>
+    <div className='flex h-[100vh]'>
     {/* Sidebar - Fixed */}
-    <div className='fixed top-[65px] left-0 w-[240px] h-[calc(100vh-65px)] bg-white'>
+    <div className='fixed top-[65px]  left-0  h-[calc(100vh-65px)] bg-white'>
       <Sidebarcom  getAllPosts={getAllPosts} />
     </div>
   
     {/* Main Content - Pushed right, scrollable */}
-    <div className='ml-[240px] flex-1 mt-16 overflow-y-auto  bg-amber-300' style={{ height: 'calc(100vh - 65px)' }}>
+    <div className='  lg:ml-[240px] ml-[px] flex-1 mt-16 overflow-y-aut0   ' style={{ height: 'calc(110vh - 65px)' }}>
         <div className='max-w-1/2 m-auto  flex flex-col gap-2'>
           {posts?.map((ele,i)=>{
  return <Posts getAllPosts= {getAllPosts} key ={ele._id} ele={ele}/>

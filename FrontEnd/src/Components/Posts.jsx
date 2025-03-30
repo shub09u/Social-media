@@ -83,11 +83,16 @@ let navigate = useNavigate()
 const commentLike=async(obj)=>{
 console.log(obj);
 
-let res = await axios.get(`https://social-media-1-7t2p.onrender.com/posts/likecomment/${obj._id}`)
+ let res = await axios.get(`https://social-media-1-7t2p.onrender.com/posts/likecomment/${props.ele._id}/${obj._id}`,{
+            headers:{
+                'Authorization':userSlice.token
+            }
+        })
         let data = res.data
+        props.getAllPosts()
+
         console.log(data)
 
-        props.getAllPosts()
 
 }
 
@@ -206,7 +211,7 @@ const handleClick=()=>{
                     </IconButton>
                 </Box>
                
-             
+              
             </CardContent>
             <CardContent>
                 <Link
@@ -250,6 +255,8 @@ const handleClick=()=>{
                     placeholder="Add a comment…"
                     sx={{ flex: 1, px: 0, '--Input-focusedThickness': '0px' }}
                 />
+  
+
                 <button onClick={()=>commentHandler(props.ele)} className='cursor-pointer  bg-green-600 px-2 py-1 rounded-md text-white' type='button' role="button">
                     Post
                 </button>
@@ -270,9 +277,21 @@ const handleClick=()=>{
                                 <p className='font-semibold'>{ele?.userId?.name}</p>
                                 <p>{ele.text}</p>
                                 </div>
+
                             </div>
+{!props?.ele?.Commentlike?.includes(userId) && <IconButton onClick={()=>commentLike(props.ele)} variant="plain" color="neutral" size="sm">
+                        <FavoriteBorder />       
+                    </IconButton>}
+                  {props?.ele?.Commentlike?.includes(userId) &&  <IconButton  onClick={()=>commentLike(props.ele)}   color="danger" size="sm">
+                        <FaHeart size={22}/>       
+                    </IconButton>}
+
                            {userId===ele.userId._id && <MdDelete onClick={()=>handleCommentDelete(ele)}  size={20} color='red'/>}
+
+
+
                         </div>
+
                     })
                 }
                </div> 
