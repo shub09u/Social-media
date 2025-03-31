@@ -45,7 +45,7 @@ setTiming(false)
 }
        }
   return (
-    <div className=' w-full m-auto h-[45vh] relative '>
+    <div className=' w-full  m-auto h-[45vh]  relative '>
       { timing=== false && <img className='w-[100%] h-[300px] object-' src={Userslice.user?.coverPic} alt="" />}
 
 { timing=== true && <div>

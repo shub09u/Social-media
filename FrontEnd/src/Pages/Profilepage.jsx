@@ -36,11 +36,11 @@ console.log(userslice);
     <div>
         
     
-      <div  className="topPart w-[90%] m-auto h-[45vh] relative bg-green-500 ">
+      <div  className="topPart w-[90%] m-auto h-[45vh]  relative  ">
         <CoverPic/>
       </div>
-      <div className="mid mb-5 w-[50%] m-auto text-center mt-16 ">
-        <div className='flex justify-center gap-7  '>
+      <div className="mid mb-5 w-[50%]  m-auto text-center lg: mt-16  ">
+        <div className='flex sm: mt-42  justify-center gap-8  '>
         <span>
             <b>Posts</b>
             <p>{posts.length}</p>
@@ -58,7 +58,7 @@ console.log(userslice);
       </div>
 
      
-      <div className='max-w-1/4 m-auto  flex flex-col gap-2'>
+      <div className='lg:max-w-1/4 lg:m-auto m-12  flex flex-col gap-'>
                    {posts.map((ele,i)=>{
                      return <Posts ele={ele}/>
                    })}
