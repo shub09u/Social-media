@@ -36,7 +36,7 @@ console.log(userSlice);
     </div>
   
     {/* Main Content - Pushed right, scrollable */}
-    <div className=' lg:ml-[240px] ml-50px flex-1  overflow-y-auto lg:pt-15 pt-13 bg-amber-400' style={{ height: 'calc(110vh - 65px)' }}>
+    <div className=' lg:ml-[240px] ml-[20px] flex-1  overflow-y-auto lg:pt-15 pt-13 bg-amber-400' style={{ height: 'calc(110vh - 65px)' }}>
         <div className='max-w-1/2 m-auto  flex flex-col gap-2'>
           {posts?.map((ele,i)=>{
  return <Posts getAllPosts= {getAllPosts} key ={ele._id} ele={ele}/>
