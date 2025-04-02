@@ -210,7 +210,7 @@ export default function PrimarySearchAppBar() {
           </Typography>
 
           <form action="" className='flex relative item-center justify-center'  >
-            <input onChange={handleSearch} type="text" placeholder='search a user' className='px-4 py-2 pr-6 rounded-md border outline-none ml-80' />
+            <input onChange={handleSearch} type="text" placeholder='search a user' className='px-4 py-2 pr-4 rounded-md border outline-none lg:ml-80 ml-10' />
           </form>
 
           <div className='bg-white text-black absolute top-full ml-80 w-[220px] '>
