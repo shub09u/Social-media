@@ -94,9 +94,9 @@ props.getAllPosts()
 <li className='lg:p-3 p-1 border-b text-black'> <Link to={'/'}>Home</Link> </li>
 
 <li onClick={showModal} className=' lg:p-3   border-b text-black'>create post</li>
-<li  className='lg:p-3  border-b text-black'>Message</li>
-<li  className='lg:p-3  border-b text-black'>Followers</li>
-<li  className='lg:p-3  border-b text-black'>Following</li>
+<li  className='lg:p-3 p-1 border-b text-black'>Message</li>
+<li  className='lg:p-3 p-1 border-b text-black'>Followers</li>
+<li  className='lg:p-3 p-1 border-b text-black'>Following</li>
 </ul>
 
 <Modal title= "Create Post" className='lg:w-full md:w-[150px] sm:w-[80px] text-center' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
