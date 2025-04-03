@@ -103,7 +103,7 @@ console.log(friend);
             <p>{friend?.followings?.length}</p>
         </span>
         </div>
-         <div className='flex gap-2 absolute lg:right-0 top-80 right-1'>
+         <div className='flex gap-2 absolute lg:right-0 top-90 right-1'>
   <Link state={{friend:{id:friend?._id, profilePic:friend?.profilePic,name:friend?.name}}}className='bg-yellow-700 px-3 py-2 rounded-md hover:bg-yellow-800 text-white' to={'/chat'}>Chat</Link>
           {
             friend?.followers?.includes(userSlice?.user?._id) ?
@@ -117,7 +117,7 @@ console.log(friend);
       </div>
 
      
-      {friendPosts?.length>0?<div className='max-w-1/4  lg:m-auto pl-20 flex flex-col gap-2'>
+      {friendPosts?.length>0?<div className='max-w-1/4  lg:m-auto md:m-auto ml-10 flex flex-col gap-2'>
                    {friendPosts.map((ele,i)=>{
                      return <Posts ele={ele}/>
                    })}
