@@ -191,26 +191,26 @@ export default function PrimarySearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 2 }}
+            sx={{ mr: 1 }}
           >
             <MenuIcon />
-          </IconButton>
+          </IconButton> */}
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: '', sm: 'block' } }}
           >
             MUI
           </Typography>
 
           <form action="" className='flex relative item-center justify-center'  >
-            <input onChange={handleSearch} type="text" placeholder='search a user' className='px-1 py-2 pr-1 rounded-md border outline-none lg:ml-80 ' />
+            <input onChange={handleSearch} type="text" placeholder='search a user' className='px-1 py-2 pr-1 rounded-md border outline-none lg:ml-80 ml-10' />
           </form>
 
           <div className='bg-white text-black absolute top-full ml-80 w-[220px] '>
