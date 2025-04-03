@@ -75,7 +75,7 @@ console.log(friend);
     
       <div  className="topPart w-[90%] m-auto h-[45vh] relative ">
       <div className=' w-full m-auto h-[45vh] relative '>
-     <img className='w-full h-full object-cover' src={friend?.coverPic} alt="" />
+     <img className='w-full h-full mt-16 object-cover' src={friend?.coverPic} alt="" />
  
 
 

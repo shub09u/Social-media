@@ -39,7 +39,7 @@ console.log(userslice);
       <div  className="topPart w-[90%] m-auto h-[45vh]  relative  ">
         <CoverPic/>
       </div>
-      <div className="mid mb-5 w-[50%]  m-auto text-center md:mt-16 pt-32 ">
+      <div className="mid mb-5 w-[50%]  m-auto text-center lg:mt-16 mt-32 ">
         <div className='flex  justify-center gap-8  '>
         <span>
             <b>Posts</b>
