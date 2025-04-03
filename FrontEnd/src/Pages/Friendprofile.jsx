@@ -73,8 +73,8 @@ console.log(friend);
     <div>
         
     
-      <div  className="topPart w-[90%] m-auto h-[45vh] relative bg-green-500">
-      <div className=' w-full m-auto h-[45vh] relative bg-green-500'>
+      <div  className="topPart w-[90%] m-auto h-[45vh] relative ">
+      <div className=' w-full m-auto h-[45vh] relative '>
      <img className='w-full h-full object-cover' src={friend?.coverPic} alt="" />
  
 
@@ -88,7 +88,7 @@ console.log(friend);
 </div>
     </div>
       </div>
-      <div className="mid mb-5 w-[50%] m-auto text-center mt-5 ">
+      <div className="mid mb-5 w-[50%] m-auto text-center lg:mt-5 mt-30 ">
         <div className='flex justify-center gap-7 '>
         <span>
             <b>Posts</b>
@@ -103,7 +103,7 @@ console.log(friend);
             <p>{friend?.followings?.length}</p>
         </span>
         </div>
-         <div className='flex gap-2 absolute right-0'>
+         <div className='flex gap-2 absolute lg:right-0 top-75 right-1'>
   <Link state={{friend:{id:friend?._id, profilePic:friend?.profilePic,name:friend?.name}}}className='bg-yellow-700 px-3 py-2 rounded-md hover:bg-yellow-800 text-white' to={'/chat'}>Chat</Link>
           {
             friend?.followers?.includes(userSlice?.user?._id) ?
@@ -117,7 +117,7 @@ console.log(friend);
       </div>
 
      
-      {friendPosts?.length>0?<div className='max-w-1/4 m-auto  flex flex-col gap-2'>
+      {friendPosts?.length>0?<div className='lg:max-w-1/4 w-1/2 m-auto  flex flex-col gap-2'>
                    {friendPosts.map((ele,i)=>{
                      return <Posts ele={ele}/>
                    })}

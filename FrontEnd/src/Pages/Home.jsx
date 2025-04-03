@@ -27,7 +27,7 @@ console.log(userSlice);
   useEffect(()=>{
     getAllPosts()
   },[])
-
+ 
   return (
     <div className='flex h-[80vh]'>
     {/* Sidebar - Fixed */}
