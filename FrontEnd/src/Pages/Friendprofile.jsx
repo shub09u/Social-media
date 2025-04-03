@@ -117,7 +117,7 @@ console.log(friend);
       </div>
 
      
-      {friendPosts?.length>0?<div className='max-w-1/4  lg:m-auto md:m-auto ml-10 flex flex-col gap-2'>
+      {friendPosts?.length>0?<div className='max-w-1/4  lg:m-auto md:m-auto ml-15 flex flex-col gap-2'>
                    {friendPosts.map((ele,i)=>{
                      return <Posts ele={ele}/>
                    })}
