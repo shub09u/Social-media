@@ -213,7 +213,7 @@ export default function PrimarySearchAppBar() {
             <input onChange={handleSearch} type="text" placeholder='search a user' className='px-1 py-2 pr-1 rounded-md border outline-none lg:ml-80 ml-10'/>
           </form>
 
-          <div className='bg-white text-black absolute top-full ml-80 w-[220px] '>
+          <div className='bg-white text-black absolute top-full  w-[200px] lg:ml-[350px] ml-20 '>
             {
               searchUser.map((ele, i) => {
                   

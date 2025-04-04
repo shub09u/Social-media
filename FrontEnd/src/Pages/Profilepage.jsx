@@ -58,11 +58,11 @@ console.log(userslice);
       </div>
 
      
-      <div className='lg:max-w-1/4 lg:m-auto m-12  flex flex-col gap-'>
+      <div className='lg:w-1/4 md:w-1/2 md:m-auto lg:m-auto m-12  flex flex-col gap-2'>
                    {posts.map((ele,i)=>{
                      return <Posts ele={ele}/>
                    })}
-                 </div>
+                 </div> 
     </div>
   )
 }

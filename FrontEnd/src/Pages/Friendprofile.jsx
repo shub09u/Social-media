@@ -88,7 +88,7 @@ console.log(friend);
 </div>
     </div>
       </div>
-      <div className="mid mb-5 w-[50%] m-auto text-center lg:mt-5 mt-30 ">
+      <div className="mid mb-5 w-[50%] m-auto text-center lg:mt-5 mt-35 ">
         <div className='flex justify-center gap-7 '>
         <span>
             <b>Posts</b>

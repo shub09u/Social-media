@@ -89,8 +89,8 @@ props.getAllPosts()
 
 
   return (
-    <div className='mb-12'>
-      <ul className=' lg:w-[230px] w-[85px] flex shrink-0 flex-col text-center   '>
+    <div className='mb-13'>
+      <ul className=' lg:w-[230px] w-[85px] flex shrink-0 flex-col text-center bg-amber-200  '>
 <li className='lg:p-3 p-1 border-b text-black'> <Link to={'/'}>Home</Link> </li>
 
 <li onClick={showModal} className=' lg:p-3   border-b text-black'>create post</li>
